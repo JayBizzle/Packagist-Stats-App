@@ -1,0 +1,23 @@
+{
+  "name": "packagist-stats",
+  "version": "1.0.0",
+  "description": "Display package install stats",
+  "main": "./main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-packager . LiveStats --platform=darwin --arch=all --version=1.4.3 --overwrite"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-packager": "^5.1.0"
+  },
+  "dependencies": {
+    "moment": "^2.10.6",
+    "native-app": "^1.0.2",
+    "opener": "^1.4.1",
+    "path": "^0.12.7",
+    "request": "^2.65.0"
+  }
+}
