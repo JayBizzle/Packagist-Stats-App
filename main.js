@@ -10,7 +10,7 @@ var opener   = require('opener');
 var moment   = require('moment');
 
 var iconDull    = path.join(__dirname, 'icon.png');
-var url         = 'https://packagist.org/packages/jaybizzle/crawler-detect.json?' + Date.now;
+var url         = 'https://packagist.org/packages/jaybizzle/crawler-detect.json';
 var show        = 'all';
 var tid, appIcon, stored;
 var preferencesPath = app.getPath('userData')+'/settings.json';
@@ -123,7 +123,7 @@ function setTitle() {
 function pingConsole() {
     request(
     {
-        url: url,
+        url: url + '?' + Date.now(),
         json: true
     },
     function (error, response, body) {
