@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build": "electron-packager . LiveStats --platform=darwin --arch=all --version=1.4.3 --overwrite"
+    "build": "electron-packager . PackagistStats --platform=darwin --arch=all --version=1.4.3 --overwrite"
   },
   "author": "",
   "license": "ISC",
